@@ -8,17 +8,24 @@ import transport.water.steam_ship;
 
 public class main {
     public static void main(String[] args) {
-        transport f = new fighter_jet("reactive");
+        fighter_jet f = new fighter_jet("reactive");
         f.description();
-        transport st = new steam_train("steam");
+        f.weapon_type();
+        steam_train st = new steam_train("steam");
         st.description();
-        transport b = new bus("gasoline");
+        st.steam_power();
+        bus b = new bus("gasoline");
         b.description();
-        transport t = new tank("diesel");
+        b.popularity();
+        tank t = new tank("diesel");
         t.description();
-        transport tr = new trolleybus("electric");
+        t.weapon_type();
+        trolleybus tr = new trolleybus("electric");
         tr.description();
-        transport ss = new steam_ship("steam");
+        tr.popularity();
+        steam_ship ss = new steam_ship("steam");
         ss.description();
+        ss.popularity();
+        ss.steam_power();
     }
 }
